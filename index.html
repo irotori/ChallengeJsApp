@@ -4,25 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Caisse</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Articles</h1>
-    <ul class="list"></ul>
-<br/>
-  <form>
-      <select id="product" required>
-        <option hidden value="0">--Choisir une option</option>
-        <option value="1000">Papier</option>
-        <option value="500">Crayon</option>
-        <option value="200">Stylo</option>
-        <option value="300">Regle</option>
-      </select>
-    <input type="number" min="1" max="5" id="number" required></imput>
-  <input type="button" 
-         value="Total" 
-         class="btn"
-         onclick="cal()"> </input>
-  </form>
+  <header>
+    <p id="logo">Librarie Du Coin</p>
+    <nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./livres.html">Livres</a></li>
+        <li><a href="./fournitures.html">Fournitures</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section>
+    <h1>La librairie du coin </h1>
+    <p>Piqure de culture</p>
+  
+  </section>
+  
 <script src="script.js"></script>
 </body>
 </html>

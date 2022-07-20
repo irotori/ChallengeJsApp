@@ -1,7 +1,14 @@
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navList.classList.toggle('active');
+});
+
 function cal() {
   const v = document.querySelector('#product');
   const n = document.querySelector('#number').value;
-  
   const articleName = v.options[v.selectedIndex].text
   const total = parseInt(v.value,10) * parseInt(n, 10);  
   const item = {
